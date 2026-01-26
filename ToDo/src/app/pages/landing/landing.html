@@ -1,3 +1,91 @@
-<p>landing works!</p>
-<a routerLink="/register">Register</a>
-<a routerLink="/login">Login</a>
+<!-- SECCIÓN HERO (PRINCIPAL) -->
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+
+        <!-- Imagen o Ilustración (Derecha) -->
+        <div class="col-10 col-sm-8 col-lg-6">
+            <!-- Usamos un icono gigante de Bootstrap para simular una ilustración -->
+            <div class="text-center text-primary opacity-75">
+                <i class="bi bi-check-circle-fill" style="font-size: 10rem;"></i>
+            </div>
+        </div>
+
+        <!-- Texto y Botones (Izquierda) -->
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3 text-dark">
+                Organiza tu trabajo,<br>
+                <span class="text-primary">libera tu mente.</span>
+            </h1>
+            <p class="lead">
+                La forma más sencilla de gestionar tus tareas diarias. Olvida el papel y las notas adhesivas.
+                Con <strong>Mi ToDo App</strong>, mantén el control de tus proyectos personales y profesionales en un
+                solo lugar.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" routerLink="/register">
+                    Crear cuenta gratis
+                </button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4" routerLink="/login">
+                    Iniciar Sesión
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SECCIÓN DE CARACTERÍSTICAS (FEATURES) -->
+<div class="container px-4 py-5" id="features">
+    <h2 class="pb-2 border-bottom">¿Por qué usar nuestra App?</h2>
+
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+        <!-- Feature 1 -->
+        <div class="col">
+            <div
+                class="d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3 rounded-3 p-3">
+                <i class="bi bi-lightning-charge"></i>
+            </div>
+            <h3 class="fs-2">Rápida y Simple</h3>
+            <p>Sin configuraciones complicadas. Añade tareas en milisegundos y márcalas como completadas con un solo
+                clic. Diseñada para la velocidad.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="col">
+            <div
+                class="d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3 rounded-3 p-3">
+                <i class="bi bi-shield-check"></i>
+            </div>
+            <h3 class="fs-2">Segura</h3>
+            <p>Tus datos son tuyos. Utilizamos autenticación segura para que solo tú tengas acceso a tu lista de
+                pendientes privada.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="col">
+            <div
+                class="d-inline-flex align-items-center justify-content-center bg-primary bg-gradient text-white fs-2 mb-3 rounded-3 p-3">
+                <i class="bi bi-phone"></i>
+            </div>
+            <h3 class="fs-2">Responsiva</h3>
+            <p>Accede desde tu móvil, tablet o computadora de escritorio. El diseño se adapta perfectamente a cualquier
+                tamaño de pantalla.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- SECCIÓN FINAL DE LLAMADA A LA ACCIÓN -->
+<div class="bg-dark text-secondary px-4 py-5 text-center">
+    <div class="py-5">
+        <h1 class="display-5 fw-bold text-white">Empieza a ser productivo hoy</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="fs-5 mb-4">Únete a miles de usuarios que ya han organizado su vida con nuestra herramienta.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-outline-light btn-lg px-4" routerLink="/register">
+                    Registrarme ahora
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

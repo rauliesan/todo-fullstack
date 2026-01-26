@@ -1,1 +1,90 @@
-<p>todo works!</p>
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8 col-xl-7">
+      
+      <!-- Card Principal -->
+      <div class="card shadow border-0 rounded-4">
+        
+        <!-- Header -->
+        <div class="card-header bg-primary p-4 text-white">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div>
+              <h2 class="mb-0 fw-bold"><i class="bi bi-check2-square me-2"></i>Mis Tareas</h2>
+            </div>
+            <!-- Contador estático -->
+            <div class="text-end">
+              <span class="fs-4 fw-bold">2</span>
+              <span class="small opacity-75 d-block">Tareas</span>
+            </div>
+          </div>
+
+          <!-- Barra de Progreso estática (ejemplo al 50%) -->
+          <div class="progress" style="height: 6px; background-color: rgba(255,255,255,0.3);">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 50%"></div>
+          </div>
+        </div>
+
+        <div class="card-body p-4 bg-light">
+          
+          <!-- Input -->
+          <div class="input-group input-group-lg mb-4 shadow-sm">
+            <input type="text" class="form-control border-0" placeholder="¿Qué hay que hacer?">
+            <button class="btn btn-primary px-4" type="button">
+              <i class="bi bi-plus-lg"></i>
+            </button>
+          </div>
+
+          <!-- Lista de Tareas -->
+          <div class="list-group list-group-flush">
+            
+            <!-- EJEMPLO 1: Tarea Pendiente -->
+            <div class="list-group-item border-0 mb-2 rounded-3 shadow-sm d-flex align-items-center justify-content-between p-3 bg-white">
+              <div class="d-flex align-items-center flex-grow-1" style="cursor: pointer;">
+                <!-- Icono Circulo -->
+                <i class="bi bi-circle fs-4 me-3 text-primary"></i>
+                
+                <div>
+                  <div class="fw-bold">Aprender Angular</div>
+                  <small class="text-muted">22/10/2023</small>
+                </div>
+              </div>
+
+              <button class="btn btn-outline-danger btn-sm rounded-circle ms-3">
+                <i class="bi bi-trash-fill"></i>
+              </button>
+            </div>
+
+            <!-- EJEMPLO 2: Tarea Completada (Para que veas los estilos necesarios) -->
+            <div class="list-group-item border-0 mb-2 rounded-3 shadow-sm d-flex align-items-center justify-content-between p-3 bg-white">
+              <div class="d-flex align-items-center flex-grow-1" style="cursor: pointer;">
+                <!-- Icono Check Verde -->
+                <i class="bi bi-check-circle-fill fs-4 me-3 text-success"></i>
+                
+                <div>
+                  <!-- Texto tachado y gris -->
+                  <div class="fw-bold text-decoration-line-through text-muted">Instalar Bootstrap</div>
+                  <small class="text-muted">22/10/2023</small>
+                </div>
+              </div>
+
+              <button class="btn btn-outline-danger btn-sm rounded-circle ms-3">
+                <i class="bi bi-trash-fill"></i>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Mensaje Empty State (Oculto visualmente, listo para tu lógica) -->
+          <!-- 
+          <div class="text-center py-5 text-muted">
+            <i class="bi bi-emoji-smile fs-1 mb-2 d-block"></i>
+            <p>No tienes tareas pendientes</p>
+          </div> 
+          -->
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

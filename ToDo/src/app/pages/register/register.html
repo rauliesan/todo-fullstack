@@ -1,1 +1,94 @@
-<p>register works!</p>
+<div class="container d-flex justify-content-center align-items-center py-5" style="min-height: 80vh;">
+  <div class="col-12 col-md-8 col-lg-5">
+    
+    <div class="card shadow-lg rounded-3 border-0">
+      <div class="card-body p-5">
+        
+        <!-- Encabezado -->
+        <div class="text-center mb-4">
+          <h2 class="fw-bold text-success">Crear Cuenta</h2>
+          <p class="text-muted">Únete gratis y empieza a organizar tu vida</p>
+        </div>
+
+        <!-- Formulario -->
+        <form>
+          
+          <!-- Nombre Completo -->
+          <div class="mb-3">
+            <label class="form-label fw-bold">Nombre Completo</label>
+            <div class="input-group">
+              <span class="input-group-text bg-light text-success"><i class="bi bi-person"></i></span>
+              <input 
+                type="text" 
+                name="fullname"
+                class="form-control" 
+                placeholder="Juan Pérez"
+                required>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="mb-3">
+            <label class="form-label fw-bold">Correo Electrónico</label>
+            <div class="input-group">
+              <span class="input-group-text bg-light text-success"><i class="bi bi-envelope"></i></span>
+              <input 
+                type="email" 
+                name="email"
+                class="form-control" 
+                placeholder="nombre@ejemplo.com"
+                required>
+            </div>
+          </div>
+
+          <!-- Password -->
+          <div class="mb-3">
+            <label class="form-label fw-bold">Contraseña</label>
+            <div class="input-group">
+              <span class="input-group-text bg-light text-success"><i class="bi bi-lock"></i></span>
+              <input 
+                type="password" 
+                name="password"
+                class="form-control" 
+                placeholder="******"
+                required>
+            </div>
+          </div>
+
+          <!-- Confirmar Password -->
+          <div class="mb-4">
+            <label class="form-label fw-bold">Confirmar Contraseña</label>
+            <div class="input-group">
+              <span class="input-group-text bg-light text-success"><i class="bi bi-check-lg"></i></span>
+              <input 
+                type="password" 
+                name="confirmPassword"
+                class="form-control" 
+                placeholder="******"
+                required>
+            </div>
+          </div>
+
+          <!-- Checkbox TyC -->
+          <div class="mb-4 form-check">
+            <input type="checkbox" class="form-check-input" id="terms" required>
+            <label class="form-check-label small" for="terms">Acepto los términos y condiciones</label>
+          </div>
+
+          <!-- Botón -->
+          <div class="d-grid">
+            <button type="submit" class="btn btn-success btn-lg">Registrarse</button>
+          </div>
+
+        </form>
+
+        <!-- Footer del card -->
+        <div class="text-center mt-4">
+          <p class="mb-0">¿Ya tienes cuenta? <a routerLink="/login" class="text-success fw-bold text-decoration-none">Inicia Sesión</a></p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
